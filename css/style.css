@@ -2,19 +2,24 @@ body, html {
     width: 100%;
     height: 100%;
 }
+body {
+    position: absolute;
+}
 .chat-box {
-    width: 500px;
-    height: 100%;
-    background-color: lavender;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 10px;
+    max-width: 500px;
+    height: 80%;
+    background-color: silver;
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 .messeges-fild {
-    flex: 1 0 auto;
-    position: relative;
-    top: 5px;
     width: 95%;
-    height: 1px;
+    height: 100%;
     background-color: white;
     margin: 0 auto;
     overflow-y: scroll;
@@ -33,8 +38,13 @@ body, html {
     padding: 5px;
     max-width: 75%;
     height: min-content;
-    background-color: lavender;
+    background-color: lightsteelblue;
     flex: 0 0 auto;
+}
+
+.panel {
+    flex: 1 0 auto;
+    height: 0;
 }
 
 .sender {
@@ -50,8 +60,8 @@ body, html {
 .caht-fild {
     flex: 0 0 auto;
     position: relative;
-    width: 95%;
-    margin: 1rem auto;
+    width: 97%;
+    margin: 1rem auto 4px auto;
     display: flex;
 }
 
@@ -65,12 +75,24 @@ body, html {
     background-color: aquamarine;
     height: 20px;
     align-self: end;
+    cursor: pointer;
+
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.btn:active {
+    background-color: mediumaquamarine;
+    box-shadow: inset 0 0 1px 1px gray;
 }
 
 .input-text {
     flex: 1 0 auto;
     font-size: 14px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     resize: none;
+    scrollbar-width: thin; /*firefox*/
 }
