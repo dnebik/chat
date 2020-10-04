@@ -4,6 +4,76 @@ body, html {
 }
 body {
     position: absolute;
+    background-color: beige;
+}
+hr {
+    padding: 1px;
+    background-color: gray;
+    margin-bottom: 8px;
+}
+h1 {
+    margin-bottom: 8px;
+}
+.card {
+    position: absolute;
+    vertical-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: max-content;
+    min-width: 150px;
+    background-color: darkseagreen;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    color: dimgray;
+    box-shadow: 0 0 2px 2px slategray;
+}
+.card-body {
+    padding: 0 5px;
+}
+.label {
+    display: block;
+    margin-bottom: 3px;
+}
+.color-select {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.input {
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px gray;
+}
+.btn-success {
+    margin-bottom: 8px;
+    display: block;
+    /*float: right;*/
+    padding: 5px;
+    border-radius: 5px;
+    color: dimgray;
+    background-color: aquamarine;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px gray;
+}
+.btn-success:active {
+    background-color: yellowgreen;
+    color: gray;
+    box-shadow: inset 0 0 1px 1px gray;
+}
+.info-box {
+    padding: 8px;
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: small;
 }
 .chat-box {
     margin: 5px auto;
@@ -12,7 +82,7 @@ body {
     padding-top: 10px;
     max-width: 500px;
     height: 80%;
-    background-color: silver;
+    background-color: darkseagreen;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;

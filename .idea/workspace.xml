@@ -19,12 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="Верстка чата">
-      <change afterPath="$PROJECT_DIR$/view/chat/index.php" afterDir="false" />
+    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="index">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/menue/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/menue/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <updated>1601735260606</updated>
       <workItem from="1601735264952" duration="1872000" />
       <workItem from="1601737318517" duration="4536000" />
-      <workItem from="1601804438379" duration="15233000" />
+      <workItem from="1601804438379" duration="30479000" />
     </task>
     <task id="LOCAL-00001" summary="Верстка чата">
       <created>1601815083185</created>
@@ -94,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601815083185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="основа">
+      <created>1601836776729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601836776729</updated>
+    </task>
+    <task id="LOCAL-00003" summary="index">
+      <created>1601836790634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601836790634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +130,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Верстка чата" />
-    <option name="LAST_COMMIT_MESSAGE" value="Верстка чата" />
+    <MESSAGE value="основа" />
+    <MESSAGE value="index" />
+    <option name="LAST_COMMIT_MESSAGE" value="index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601830691600">
@@ -144,10 +163,14 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="235" height="500" key="HiddenNamespacesPopup/0.0.1366.732@0.0.1366.732" timestamp="1601830721745" />
-    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog" timestamp="1601836486423">
+    <state x="447" y="87" key="NewPhpClassDialog" timestamp="1601852159619">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1601836486423" />
+    <state x="447" y="87" key="NewPhpClassDialog/0.0.1366.732@0.0.1366.732" timestamp="1601852159619" />
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog" timestamp="1601849910579">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1601849910579" />
     <state x="184" y="1" key="SettingsEditor" timestamp="1601736403936">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -156,10 +179,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="283" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1601815247491" />
-    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601836375117">
+    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601845406995">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.732@0.0.1366.732" timestamp="1601836375117" />
+    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.732@0.0.1366.732" timestamp="1601845406995" />
     <state x="386" y="0" width="594" height="732" key="find.popup" timestamp="1601735786950">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

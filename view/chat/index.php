@@ -1,5 +1,8 @@
 
 <div class="chat-box">
+    <div class="info-box">
+        <p>Код: H809B6</p>
+    </div>
     <div class="panel">
         <div class="messeges-fild">
             <div class="messege-box">

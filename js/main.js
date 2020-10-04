@@ -25,6 +25,21 @@ function autosize(){
 
 $(document).ready(function(){
     var elem = $('.messeges-fild')[0];
-    console.log(elem);
-    elem.scrollTop = elem.scrollHeight;
+    if (elem)
+        elem.scrollTop = elem.scrollHeight;
 });
+
+if ($('.color-select')) {
+    var color = getRandomColor();
+    console.log(color);
+    $(".color-select")[0].value = color;
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
