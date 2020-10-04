@@ -1,5 +1,9 @@
 <?php
+
+/* @var $db PDO */
+
 session_start();
+require_once 'scripts/database.php';
 //session_destroy();
 //session_abort();
 //session_reset();
@@ -52,6 +56,10 @@ switch ($uri[1]) {
 
             setcookie('user[nickname]', $_POST['nickname'], strtotime('+1 month'));
             setcookie('user[color]', $_POST['color'], strtotime('+1 month'));
+
+            $query = $db->prepare("INSERT INTO user (nickname, color) VALUES ('{$_POST['nickname']}', '{$_POST['color']}')");
+            $query->execute();
+            error_log($query->queryString);
 
             header("Location: http://chat.dneb.site/menue");
             die();

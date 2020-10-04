@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="index">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" afterDir="false" />
+    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="недо MVC реалезация">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chat/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/menue/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/menue/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,7 @@
       <updated>1601735260606</updated>
       <workItem from="1601735264952" duration="1872000" />
       <workItem from="1601737318517" duration="4536000" />
-      <workItem from="1601804438379" duration="30479000" />
+      <workItem from="1601804438379" duration="31357000" />
     </task>
     <task id="LOCAL-00001" summary="Верстка чата">
       <created>1601815083185</created>
@@ -111,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601836790634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="недо MVC реалезация">
+      <created>1601853401566</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601853401566</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +133,8 @@
     <MESSAGE value="Верстка чата" />
     <MESSAGE value="основа" />
     <MESSAGE value="index" />
-    <option name="LAST_COMMIT_MESSAGE" value="index" />
+    <MESSAGE value="недо MVC реалезация" />
+    <option name="LAST_COMMIT_MESSAGE" value="недо MVC реалезация" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601830691600">
@@ -143,22 +145,22 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="100" y="100" width="1166" height="532" key="DirDiffDialog/0.0.1366.732@0.0.1366.732" timestamp="1601736404421" />
-    <state width="903" height="164" key="GridCell.Tab.0.bottom" timestamp="1601836414704">
+    <state width="903" height="164" key="GridCell.Tab.0.bottom" timestamp="1601854178440">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1601836414704" />
-    <state width="903" height="164" key="GridCell.Tab.0.center" timestamp="1601836414703">
+    <state width="903" height="164" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1601854178440" />
+    <state width="903" height="164" key="GridCell.Tab.0.center" timestamp="1601854178439">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1601836414703" />
-    <state width="903" height="164" key="GridCell.Tab.0.left" timestamp="1601836414702">
+    <state width="903" height="164" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1601854178439" />
+    <state width="903" height="164" key="GridCell.Tab.0.left" timestamp="1601854178438">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1601836414702" />
-    <state width="903" height="164" key="GridCell.Tab.0.right" timestamp="1601836414703">
+    <state width="903" height="164" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1601854178438" />
+    <state width="903" height="164" key="GridCell.Tab.0.right" timestamp="1601854178439">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1601836414703" />
+    <state width="903" height="164" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1601854178439" />
     <state width="235" height="500" key="HiddenNamespacesPopup" timestamp="1601830721745">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -167,10 +169,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="447" y="87" key="NewPhpClassDialog/0.0.1366.732@0.0.1366.732" timestamp="1601852159619" />
-    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog" timestamp="1601849910579">
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog" timestamp="1601853541920">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1601849910579" />
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1601853541920" />
     <state x="184" y="1" key="SettingsEditor" timestamp="1601736403936">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -179,6 +181,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="283" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1601815247491" />
+    <state x="421" y="174" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601854183893">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="421" y="174" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1366.732@0.0.1366.732" timestamp="1601854183893" />
     <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601845406995">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
