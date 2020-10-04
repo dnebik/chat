@@ -9,7 +9,8 @@ require_once 'scripts/database.php';
 //session_reset();
 $uri = explode('/', $_SERVER['REDIRECT_URL']);
 
-error_log(date("Y-m-d H:i:s",strtotime('+1 month')));
+error_log(print_r($_COOKIE, true));
+error_log(print_r($_SESSION, true));
 
 $render = 'view/error/index.php';
 $title = '';
@@ -38,11 +39,23 @@ switch ($uri[1]) {
 
     case 'login':
 
-//      [ЧЕКАЕ КУКИ]
-        if ($_COOKIE['nickname'] && $_COOKIE['color'] && !$_SESSION['nickname'])
+        if ($_SESSION['nickname'])
         {
-            $_SESSION['nickname'] = $_COOKIE['nickname'];
-            $_SESSION['color'] = $_COOKIE['color'];
+            header("Location: http://chat.dneb.site/menue");
+            die();
+        }
+
+//      [ЧЕКАЕМ КУКИ]
+        if (
+                $_COOKIE['user']['nickname'] &&
+                $_COOKIE['user']['color'] &&
+                $_COOKIE['user']['id'] &&
+                !$_SESSION['nickname']
+        )
+        {
+            $_SESSION['nickname'] = $_COOKIE['user']['nickname'];
+            $_SESSION['color'] = $_COOKIE['user']['color'];
+            $_SESSION['id'] = $_COOKIE['user']['id'];
 
             header("Location: http://chat.dneb.site/menue");
             die();
@@ -54,12 +67,13 @@ switch ($uri[1]) {
             $_SESSION['nickname'] = $_POST['nickname'];
             $_SESSION['color'] = $_POST['color'];
 
-            setcookie('user[nickname]', $_POST['nickname'], strtotime('+1 month'));
-            setcookie('user[color]', $_POST['color'], strtotime('+1 month'));
-
             $query = $db->prepare("INSERT INTO user (nickname, color) VALUES ('{$_POST['nickname']}', '{$_POST['color']}')");
             $query->execute();
-            error_log($query->queryString);
+            $_SESSION['id'] = $db->lastInsertId();
+
+            setcookie('user[nickname]', $_SESSION['nickname'], strtotime('+1 month'));
+            setcookie('user[color]', $_SESSION['color'], strtotime('+1 month'));
+            setcookie('user[id]', $_SESSION['id'], strtotime('+1 month'));
 
             header("Location: http://chat.dneb.site/menue");
             die();
