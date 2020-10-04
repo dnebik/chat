@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iN5XFnzFLHm7VOISlJmnY8GENx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="" />
+      <created>1601735260606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601735260606</updated>
+      <workItem from="1601735264952" duration="1872000" />
+      <workItem from="1601737318517" duration="4536000" />
+      <workItem from="1601804438379" duration="8346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1166" height="532" key="DirDiffDialog" timestamp="1601736404421">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="100" y="100" width="1166" height="532" key="DirDiffDialog/0.0.1366.732@0.0.1366.732" timestamp="1601736404421" />
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog" timestamp="1601735389947">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="500" y="291" width="355" height="148" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1601735389947" />
+    <state x="184" y="1" key="SettingsEditor" timestamp="1601736403936">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="184" y="1" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1601736403936" />
+    <state x="386" y="0" width="594" height="732" key="find.popup" timestamp="1601735786950">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="386" y="0" width="594" height="732" key="find.popup/0.0.1366.732@0.0.1366.732" timestamp="1601735786950" />
+    <state x="589" y="79" key="ftp.server.browser" timestamp="1601736360065">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="589" y="79" key="ftp.server.browser/0.0.1366.732@0.0.1366.732" timestamp="1601736360065" />
+  </component>
+</project>

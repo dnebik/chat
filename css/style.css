@@ -1,0 +1,76 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+.chat-box {
+    width: 500px;
+    height: 100%;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+}
+.messeges-fild {
+    flex: 1 0 auto;
+    position: relative;
+    top: 5px;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+    overflow-y: scroll;
+    padding: 0 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    scrollbar-width: thin; /*firefox*/
+}
+
+.messege-box {
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 5px;
+    max-width: 75%;
+    height: min-content;
+    background-color: lavender;
+    flex: 0 0 auto;
+}
+
+.sender {
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.messege {
+    margin-left: 5px;
+}
+
+.caht-fild {
+    flex: 0 0 auto;
+    position: relative;
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+}
+
+.btn {
+    flex: 0 0 auto;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    height: 20px;
+    align-self: end;
+}
+
+.input-text {
+    flex: 1 0 auto;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+}
