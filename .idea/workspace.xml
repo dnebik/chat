@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="База данных + занесение пользователя в бд">
+    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="куки">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18427b57-698c-4d80-b9a1-2603fa8f3a24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/menue/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/menue/index.php" afterDir="false" />
     </list>
     <list id="799c6ce0-bcab-4b24-b8c3-be41d34ace52" name="недо MVC реалезация" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +63,11 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -84,7 +93,8 @@
       <updated>1601735260606</updated>
       <workItem from="1601735264952" duration="1872000" />
       <workItem from="1601737318517" duration="4536000" />
-      <workItem from="1601804438379" duration="32251000" />
+      <workItem from="1601804438379" duration="34530000" />
+      <workItem from="1601881527549" duration="6317000" />
     </task>
     <task id="LOCAL-00001" summary="Верстка чата">
       <created>1601815083185</created>
@@ -128,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601854365361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="куки">
+      <created>1601855179320</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601855179320</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +161,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Верстка чата" />
@@ -151,7 +169,8 @@
     <MESSAGE value="index" />
     <MESSAGE value="недо MVC реалезация" />
     <MESSAGE value="База данных + занесение пользователя в бд" />
-    <option name="LAST_COMMIT_MESSAGE" value="База данных + занесение пользователя в бд" />
+    <MESSAGE value="куки" />
+    <option name="LAST_COMMIT_MESSAGE" value="куки" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601830691600">
@@ -162,22 +181,22 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="100" y="100" width="1166" height="532" key="DirDiffDialog/0.0.1366.732@0.0.1366.732" timestamp="1601736404421" />
-    <state width="903" height="164" key="GridCell.Tab.0.bottom" timestamp="1601854278636">
+    <state width="903" height="164" key="GridCell.Tab.0.bottom" timestamp="1601887874572">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1601854278636" />
-    <state width="903" height="164" key="GridCell.Tab.0.center" timestamp="1601854278636">
+    <state width="903" height="164" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1601887874572" />
+    <state width="903" height="164" key="GridCell.Tab.0.center" timestamp="1601887874572">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1601854278636" />
-    <state width="903" height="164" key="GridCell.Tab.0.left" timestamp="1601854278636">
+    <state width="903" height="164" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1601887874572" />
+    <state width="903" height="164" key="GridCell.Tab.0.left" timestamp="1601887874571">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1601854278636" />
-    <state width="903" height="164" key="GridCell.Tab.0.right" timestamp="1601854278636">
+    <state width="903" height="164" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1601887874571" />
+    <state width="903" height="164" key="GridCell.Tab.0.right" timestamp="1601887874572">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="903" height="164" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1601854278636" />
+    <state width="903" height="164" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1601887874572" />
     <state width="235" height="500" key="HiddenNamespacesPopup" timestamp="1601830721745">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -198,18 +217,18 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="535" y="281" width="541" height="170" key="VCS.ChangelistChooser/0.0.1366.732@0.0.1366.732" timestamp="1601854326690" />
-    <state x="283" y="102" key="Vcs.Push.Dialog.v2" timestamp="1601815247491">
+    <state x="283" y="102" key="Vcs.Push.Dialog.v2" timestamp="1601855184227">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="283" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1601815247491" />
+    <state x="283" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1601855184227" />
     <state x="421" y="174" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601854183893">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="421" y="174" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1366.732@0.0.1366.732" timestamp="1601854183893" />
-    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601845406995">
+    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601886250977">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.732@0.0.1366.732" timestamp="1601845406995" />
+    <state x="531" y="69" width="755" height="525" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.732@0.0.1366.732" timestamp="1601886250977" />
     <state x="386" y="0" width="594" height="732" key="find.popup" timestamp="1601735786950">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

@@ -1,10 +1,14 @@
 <div class="card">
     <div>
-        <button class="btn-success">Создать чат-конату</button>
+        <form action="" method="post">
+            <input type="submit" class="btn-success" name="create" value="Создать чат-конату">
+        </form>
     </div>
     <hr>
     <div>
-        <input class="input" type="text" placeholder="Код комнаты">
-        <button class="btn-success">Присоединиться</button>
+        <form action="" method="post">
+            <input class="input" type="text" placeholder="Код комнаты" name="uuid" required>
+            <input type="submit" value="Присоединиться" class="btn-success" name="connect">
+        </form>
     </div>
 </div>

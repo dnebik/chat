@@ -5,6 +5,7 @@ body, html {
 body {
     position: absolute;
     background-color: beige;
+    color: dimgray;
 }
 hr {
     padding: 1px;
@@ -165,4 +166,22 @@ h1 {
     border-radius: 10px;
     resize: none;
     scrollbar-width: thin; /*firefox*/
+}
+
+.btn-logout {
+    width: max-content;
+    margin-top: 8px;
+}
+.user-color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    /*vertical-align: middle;*/
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: max-content;
 }
