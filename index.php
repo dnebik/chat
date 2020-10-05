@@ -10,7 +10,7 @@ require_once 'scripts/database.php';
 $uri = explode('/', $_SERVER['REDIRECT_URL']);
 
 //error_log(print_r($_COOKIE, true));
-//error_log(print_r($_SESSION, true));
+//error_log(print_r($_SERVER, true));
 
 $render = 'view/error/index.php';
 $title = '';
@@ -71,6 +71,8 @@ switch ($uri[1]) {
         $title = 'Чат';
 //      Без входа ходу нет
         if (!$_SESSION['nickname']) {
+            $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            header("Referer: $actual_link");
             header("Location: http://chat.dneb.site/login");
             die();
         }
@@ -139,6 +141,11 @@ switch ($uri[1]) {
             die();
         }
 
+        if (!$_COOKIE['user'] && !$_POST['nickname'] ) {
+            $_SESSION['from'] = $_SERVER['HTTP_REFERER'];
+            error_log($_SESSION['from']);
+        }
+
 //      проверяем куки для автовхода
         if (
             $_COOKIE['user']['nickname'] &&
@@ -149,6 +156,11 @@ switch ($uri[1]) {
             $_SESSION['nickname'] = $_COOKIE['user']['nickname'];
             $_SESSION['color'] = $_COOKIE['user']['color'];
             $_SESSION['id'] = $_COOKIE['user']['id'];
+
+            if ($_SERVER['HTTP_REFERER']){
+                header("Location: " . $_SERVER['HTTP_REFERER']);
+                die();
+            }
 
             header("Location: http://chat.dneb.site/menue");
             die();
@@ -168,6 +180,13 @@ switch ($uri[1]) {
             setcookie('user[nickname]', $_SESSION['nickname'], strtotime('+1 month'));
             setcookie('user[color]', $_SESSION['color'], strtotime('+1 month'));
             setcookie('user[id]', $_SESSION['id'], strtotime('+1 month'));
+
+//            error_log("server: " . print_r($_SERVER, true));
+
+            if ($_SESSION['from']){
+                header("Location: " . $_SESSION['from']);
+                die();
+            }
 
             header("Location: http://chat.dneb.site/menue");
             die();
@@ -209,6 +228,9 @@ switch ($uri[1]) {
         <div>Color: <div class="user-color" style="background-color: <?=$_SESSION['color']?>"></div></div>
         <div class="btn-logout"><a style="text-decoration: none" href="http://chat.dneb.site/logout">
                 <button class="btn-success">Выйти</button>
+            </a></div>
+        <div class="btn-logout"><a style="text-decoration: none" href="http://chat.dneb.site/menue">
+                <button class="btn-success">Меню</button>
             </a></div>
     </div>
 <? } ?>
