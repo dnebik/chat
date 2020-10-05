@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="создание и присоединение к комнатам, загрузка сообщений из БД">
+    <list default="true" id="b3d7e937-219f-458f-8eff-bdbeccb313de" name="Default Changelist" comment="ajax обновление чата">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/update_messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/update_messages.php" afterDir="false" />
     </list>
     <list id="799c6ce0-bcab-4b24-b8c3-be41d34ace52" name="недо MVC реалезация" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1601735264952" duration="1872000" />
       <workItem from="1601737318517" duration="4536000" />
       <workItem from="1601804438379" duration="34530000" />
-      <workItem from="1601881527549" duration="16556000" />
+      <workItem from="1601881527549" duration="18361000" />
     </task>
     <task id="LOCAL-00001" summary="Верстка чата">
       <created>1601815083185</created>
@@ -152,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601887925210</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajax обновление чата">
+      <created>1601898630615</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898630615</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +185,8 @@
     <MESSAGE value="База данных + занесение пользователя в бд" />
     <MESSAGE value="куки" />
     <MESSAGE value="создание и присоединение к комнатам, загрузка сообщений из БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание и присоединение к комнатам, загрузка сообщений из БД" />
+    <MESSAGE value="ajax обновление чата" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax обновление чата" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601830691600">

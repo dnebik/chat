@@ -109,7 +109,8 @@ h1 {
     padding: 5px;
     max-width: 75%;
     height: min-content;
-    background-color: lightsteelblue;
+    background-color: #90c896;
+    width: max-content;
     flex: 0 0 auto;
 }
 

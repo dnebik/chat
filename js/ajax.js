@@ -20,8 +20,14 @@ function sendMessege(id){
 function update(id)
 {
     var messege_fild = $('.messeges-fild')[0];
-    var messege_box = messege_fild.lastElementChild;
-    var time = messege_box.lastElementChild.attributes['value'].value
+    var time = 0;
+    if(messege_fild['children'].length > 1)
+    {
+        var messege_box = messege_fild.lastElementChild;
+        time = messege_box.lastElementChild.attributes['value'].value;
+    }
+    console.log(time);
+    console.log(id);
     $.ajax({
         type: "POST",
         url: "http://chat.dneb.site/update",

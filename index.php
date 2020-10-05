@@ -37,13 +37,12 @@ switch ($uri[1]) {
             $time = $db->query($query, PDO::FETCH_ASSOC);
             $time->execute();
             $time = $time->fetch()['publish_date'];
-            error_log($time);
 
             $message['text'] = $_POST['text'];
             $message['nickname'] = $_SESSION['nickname'];
             $message['id'] = $_SESSION['id'];
             $message['color'] = $_SESSION['color'];
-            $message['time'];
+            $message['time'] = $time;
             require 'templates/message.php';
         }
         die();
