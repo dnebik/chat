@@ -31,7 +31,6 @@ $(document).ready(function(){
 
 if ($('.color-select')) {
     var color = getRandomColor();
-    console.log(color);
     $(".color-select")[0].value = color;
 }
 

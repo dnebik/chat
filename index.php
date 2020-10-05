@@ -17,6 +17,38 @@ $title = '';
 
 switch ($uri[1]) {
 
+    case 'update':
+        require 'scripts/update_messages.php';
+        die();
+        break;
+
+    case 'message':
+        if ($_POST['text'] && $_SESSION['nickname']) {
+            $message = array();
+
+            $text = ($_POST['text']);
+
+            $query = "INSERT INTO message (id_user, text, id_room) 
+                        VALUE ('{$_SESSION['id']}', '$text', '{$_POST['room']}')";
+            $insert = $db->prepare($query);
+            $insert->execute();
+
+            $query = "SELECT publish_date FROM message WHERE id = {$db->lastInsertId()}";
+            $time = $db->query($query, PDO::FETCH_ASSOC);
+            $time->execute();
+            $time = $time->fetch()['publish_date'];
+            error_log($time);
+
+            $message['text'] = $_POST['text'];
+            $message['nickname'] = $_SESSION['nickname'];
+            $message['id'] = $_SESSION['id'];
+            $message['color'] = $_SESSION['color'];
+            $message['time'];
+            require 'templates/message.php';
+        }
+        die();
+        break;
+
     case 'logout':
 //      На кой выходить коли не вошел?
         if (!$_SESSION['nickname']) {
@@ -49,24 +81,25 @@ switch ($uri[1]) {
         } else {
             $uuid = $_GET['id'];
         }
-        $id = $db->query("SELECT id FROM room WHERE uuid = '$uuid'", PDO::FETCH_ASSOC);
-        $id->execute();
-        $id = $id->fetch()['id'];
-        if ($id) {
+        $id_room = $db->query("SELECT id FROM room WHERE uuid = '$uuid'", PDO::FETCH_ASSOC);
+        $id_room->execute();
+        $id_room = $id_room->fetch()['id'];
+        if ($id_room) {
             $query = "SELECT
                             m.text as text, 
+                            m.publish_date as time,
                             u.id as id,
                             u.nickname as nickname,
                             u.color as color
                         FROM message AS m
                         INNER JOIN user AS u ON u.id = m.id_user
-                        WHERE id_room = $id
+                        WHERE id_room = $id_room
                         ORDER BY publish_date
                         LIMIT 50";
             $messages = $db->query($query, PDO::FETCH_ASSOC);
             $messages->execute();
             $messages = $messages->fetchAll();
-            error_log(print_r($messages, true));
+
             $render = 'view/chat/index.php';
         } else {
             $render = 'view/error/index.php';
@@ -124,7 +157,7 @@ switch ($uri[1]) {
 
 //      чекаем что пришло из формы
         if ($_POST['nickname']) {
-            $_SESSION['nickname'] = $_POST['nickname'];
+            $_SESSION['nickname'] = htmlentities($_POST['nickname']);
             $_SESSION['color'] = $_POST['color'];
 
 //          создаем данного пользователя
@@ -191,3 +224,4 @@ require_once $render;
 <script src="http://<?= $_SERVER['HTTP_HOST'] ?>/js/jquery-3.5.1.min.js"></script>
 <script src="https://kit.fontawesome.com/d331940b91.js" crossorigin="anonymous"></script>
 <script src="http://<?= $_SERVER['HTTP_HOST'] ?>/js/main.js"></script>
+<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/js/ajax.js"></script>
